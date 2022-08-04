@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="./images/cool.png" sizes="32x32">
+	<title>MyPortfolio</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="mask">
+		<div class="loader"></div>
+	</div>
+
+
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<nav class="header__menu">
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
+							<a href="#about" class="header__menu-link">About</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#skills" class="header__menu-link">skills</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#portfolio" class="header__menu-link">projects</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#contacts" class="header__menu-link">contacts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__main">
+					<img class="header__img" src="./images/haeder1.png" alt="">
+					<div class="line"></div>
+					<div class="header__text">
+						<p class="header__name">Michal Mart</p>
+						<h1 class="header__title">Front-End Developer</h1>
+						<p class="header__info">Portfolio</p>
+					</div>
+				</div>
+				<div class="header__scroll">
+					<a href="#about">
+						<img src="./images/down-arr.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="about" class="about">
+		<div class="container">
+			<div class="about__inner">
+				<h3 class="title">About Me</h3>
+				<p class="about__text">
+					Hi, my full name is Mikhail Martynets and I am a dedicated, energetic, and creative web developer.
+					I'm constantly growing my proficiency in HTML, CSS, and Javascript to become a professional in
+					front-end development, but I'm always eager to learn new things and grow as a developer overall.
+				</p>
+				<div class="about__link">
+					<a href="#">Resume</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills" class="skills">
+		<div class="container">
+			<h3 class="title title-skills">Skills</h3>
+			<div class="skills__inner">
+				<div class="skill">
+					<div class="outer">
+						<div class="inner">HTML5</div>
+					</div>
+
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+						<circle class="html-circle" cx="80" cy="80" r="70" />
+					</svg>
+				</div>
+				<div class="skill">
+					<div class="outer">
+						<div class="inner">CSS3</div>
+					</div>
+
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+						<circle class="css-circle" cx="80" cy="80" r="70" />
+					</svg>
+				</div>
+				<div class="skill">
+					<div class="outer">
+						<div class="inner">JavaScript</div>
+					</div>
+
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+						<circle class="js-circle" cx="80" cy="80" r="70" />
+					</svg>
+				</div>
+				<div class="skill">
+					<div class="outer">
+						<div class="inner">React.js</div>
+					</div>
+
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+						<circle class="react-circle" cx="80" cy="80" r="70" />
+					</svg>
+				</div>
+			</div>
+			<p class="skills__info">
+				My technical skills also include SASS/SCSS, RWD, BEM naming, Gulp/WebPack, Git/Github. In my spare time,
+				I enjoy reading and researching on current trends.
+			</p>
+		</div>
+	</section>
+
+	<section id="portfolio" class="portfolio">
+		<div class="container">
+
+			<h3 class="title">My Recent Works</h3>
+			<div class="item-details hidden" data-item-content id="item-1">
+				<div class="item-details-img">
+					<img src="./images/item-img1.png" alt="">
+				</div>
+				<ul class="item-details-list">
+					<a href="https://shaaamo.github.io/Vacation/" target="_blank"
+						class="item-details-text"><span>Link:</span> https://shaaamo.github.io/Vacation</a>
+					<li class="item-details-text"><span>Technologies:</span> HTML, CSS/SCSS, JavaScript, RWD, Gulp</li>
+					<li class="item-details-text"><span>Description:</span> Developed a webpage for vacation trips to Norway</li>
+				</ul>
+				<div class="item-close">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="item-details hidden" data-item-content id="item-2">
+				<div class="item-details-img">
+					<img src="./images/item-img2.png" alt="">
+				</div>
+				<ul class="item-details-list">
+					<a href="https://shaaamo.github.io/Happy/" target="_blank"
+						class="item-details-text"><span>Link:</span> https://shaaamo.github.io/Happy</a>
+					<li class="item-details-text"><span>Technologies:</span> HTML, CSS/SCSS, Grids, Vanilla JavaScript, RWD, Gulp</li>
+					<li class="item-details-text"><span>Description:</span> Developed a webpage for photography application</li>
+				</ul>
+				<div class="item-close">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="item-details hidden" data-item-content id="item-3">
+				<div class="item-details-img">
+					<img src="./images/item-img3.png" alt="">
+				</div>
+				<ul class="item-details-list">
+					<a href="https://shaaamo.github.io/Spain/" target="_blank"
+						class="item-details-text"><span>Link:</span> https://shaaamo.github.io/Spain/</a>
+					<li class="item-details-text"><span>Technologies:</span> HTML, CSS/SCSS, Vanilla JavaScript, RWD</li>
+					<li class="item-details-text"><span>Description:</span> Developed a webpage for tourist trips to Spain</li>
+				</ul>
+				<div class="item-close">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="item-details hidden" data-item-content id="item-4">
+				<div class="item-details-img">
+					<img src="./images/item-img4.png" alt="">
+				</div>
+				<ul class="item-details-list">
+					<a href="https://shaaamo.github.io/HouseOfFood/" target="_blank"
+						class="item-details-text"><span>Link:</span> https://shaaamo.github.io/HouseOfFood</a>
+					<li class="item-details-text"><span>Technologies:</span> HTML, CSS/SCSS, JavaScript, RWD, Gulp, Swiper</li>
+					<li class="item-details-text"><span>Description:</span> Developed a webpage for a local restaurant</li>
+				</ul>
+				<div class="item-close">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div class="portfolio__wrapper">
+				<a class="portfolio__item portfolio__item--firts" data-item="item-1" href="#!">
+					<div class="portfolio__item-text">Details</div>
+				</a>
+				<a class="portfolio__item portfolio__item--second" data-item="item-2" href="#!">
+					<div class="portfolio__item-text">Details</div>
+				</a>
+				<a class="portfolio__item portfolio__item--third" data-item="item-3" href="#!">
+					<div class="portfolio__item-text">Details</div>
+				</a>
+				<a class="portfolio__item portfolio__item--fourth" data-item="item-4" href="#!">
+					<div class="portfolio__item-text">Details</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<footer id="contacts" class="contacts">
+		<div class="container">
+			<h3 class="title">Contacts</h3>
+			<div class="contacts__wrapper">
+				<a href="https://t.me/WasIst_Das" class="contacts__item">
+					<img src="./images/telegram.png" alt="">
+				</a>
+				<a href="https://www.facebook.com/mikhail.mart.92/" class="contacts__item">
+					<img src="./images/facebook-app-symbol.png" alt="">
+				</a>
+				<a href="https://github.com/Shaaamo" class="contacts__item">
+					<img src="./images/github.png" alt="">
+				</a>
+				<a href="#!" class="contacts__item">
+					<img src="./images/whatsapp.png" alt="">
+				</a>
+				<a href="mailto: mart.m45@yahoo.com" class="contacts__item">
+					<img src="./images/email.png" alt="">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
